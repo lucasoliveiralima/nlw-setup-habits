@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", "Roboto Mono", sans-serif, monospace;
+}
+
+body {
+    background: #09090a;
+}
+
+#habits {
+    display: flex;
+    justify-content: space-between;
+    margin: 99px 120px 0;
+}
+
+
