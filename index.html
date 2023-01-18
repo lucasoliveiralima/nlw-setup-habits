@@ -1,22 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./assets/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto+Mono:wght@700&display=swap"
             rel="stylesheet"
         />
+
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/style.css" />
         <title>Habits</title>
     </head>
     <body>
-        <header>
-            <div id="habits">
-                <img src="./assets/images/logo.svg" alt="Imagem da logo habits" />
-            </div>
+        <header id="header">
+            <img src="./assets/images/logo.svg" alt="Logo marca do aplicativo Habits" />
+            <button>
+                <img src="./assets/images/plus.svg" alt="icone sinal de mais roxo" />
+                Resgistrar meu dia
+            </button>
         </header>
+        <main>
+            <form>
+                <div class="habits">
+                    <div class="habit">🚴</div>
+                    <div class="habit">💧</div>
+                    <div class="habit">💪</div>
+                    <div class="habit">💤</div>
+                    <div class="habit">🦮</div>
+                    <div class="habit">🥗</div>
+                </div>
+
+                <div class="days">
+                    <div class="day">
+                        <div>03/01</div>
+                        <input type="checkbox" name="cycling" />
+                        <input type="checkbox" name="water" />
+                        <input type="checkbox" name="muscle" />
+                        <input type="checkbox" name="sleep" />
+                        <input type="checkbox" name="dog" />
+                        <input type="checkbox" name="food" />
+                    </div>
+
+                    <div class="day">
+                        <div>04/01</div>
+                        <input type="checkbox" name="cycling" />
+                        <input type="checkbox" name="water" />
+                        <input type="checkbox" name="muscle" />
+                        <input type="checkbox" name="sleep" />
+                        <input type="checkbox" name="dog" />
+                        <input type="checkbox" name="food" />
+                    </div>
+                </div>
+            </form>
+        </main>
     </body>
     <script src="./assets/script.js"></script>
 </html>
