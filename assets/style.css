@@ -7,7 +7,7 @@
 
 /* body */
 body {
-    background: #09090a;
+    background-color: #09090a;
     height: 100vh;
     color: #ffffff;
 }
@@ -18,6 +18,10 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 48px;
+
+    position: fixed;
+    background-color: #09090a;
+    width: 100%;
 }
 
 button {
@@ -31,16 +35,17 @@ button {
     color: #ffffff;
     padding: 16px 24px;
 
-    font-family: "Inter";
+    font-family: "Inter" sans-serif;
     font-weight: 600;
     font-size: 16px;
     line-height: 125%;
 }
 
 /* main */
-form {
+#form-habits {
     display: flex;
-    padding: 0 48px;
+    padding: 182px 48px 48px;
+    width: fit-content;
 }
 
 .habits {
@@ -95,4 +100,10 @@ input {
 input:checked {
     border: 2px solid #a78bfa;
     background: #8b5cf6;
+}
+
+@media (max-width: 570px) {
+    button div {
+        display: none;
+    }
 }
